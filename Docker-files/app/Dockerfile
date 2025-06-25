@@ -2,7 +2,7 @@ FROM maven:3.9.9-eclipse-temurin-21-jammy AS mvn_container
 LABEL "Project"="vprofile"
 LABEL "Author"="TT"
 RUN git clone https://github.com/tej6667/vprofile-project.git
-RUN cd vprofile-project && git checkout containers && mvn install
+RUN cd vprofile-project && git checkout ttcontainers && mvn install
 #RUN mvn clean
 
 
